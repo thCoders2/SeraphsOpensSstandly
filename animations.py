@@ -1,6 +1,5 @@
 creator = 'mafloCasa'
-fearArr = ['(> oO<)', '(> oO>)', '(> oO)>', '(> Oo)>', '<( o0<)', '<(oO <)']
-lilFearArr = ['(>oO<)', '(>oO>)', '(>oO)>', '(>Oo)>', '<(o0<)', '<(oO<)']
+
 
 backgroundArr2 =    [[
 f'                                              ',
