@@ -99,7 +99,8 @@ def openNoteCreator():
     def save_content():
         title = title_entry.get()
         note = f"""{note_text.get("1.0", tk.END)}""" 
-        with open(f"{title}.py", "w") as file:
+        file_path = os.path.join("content", title)
+        with open(file_path, "w") as file:
             file.write(f"Note: {note}")
 
     # Create a button to save the content
