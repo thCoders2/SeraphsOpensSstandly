@@ -6,7 +6,7 @@ possiblesPerson = [karms, fearArr, lilFearArr]
 names = ['karms', 'fear', 'lilFear']
 # global variable to store the current character index
 current = 0
-currentSpeed = 200
+currentSpeed = 20000
 maxSpeed = 400
 nameCur = 'karms'
 # create the root window
@@ -97,6 +97,8 @@ def openNoteCreator():
 
     # Create a function to save the content to a file
     def save_content():
+        import os
+
         title = title_entry.get()
         note = f"""{note_text.get("1.0", tk.END)}""" 
         file_path = os.path.join("content", title)
