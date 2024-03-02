@@ -6,7 +6,7 @@ possiblesPerson = [karms, fearArr, lilFearArr]
 names = ['karms', 'fear', 'lilFear']
 # global variable to store the current character index
 current = 0
-currentSpeed = 20000
+currentSpeed = 300
 maxSpeed = 400
 nameCur = 'karms'
 # create the root window
@@ -35,14 +35,6 @@ def updateChar():
     # schedule the next update after 200 milliseconds
     root.after(currentSpeed, updateChar)
 
-# function to switch characters
-def switchChar():
-    global current
-    # increment the current index by one modulo the length of the array
-    current = (current + 1) % len(possiblesPerson)
-    # update the name text object
-    canvas.itemconfig(name, text=names[current])
-
 # function to go to fase
 def openMap():
     inputsOfMap= {
@@ -61,9 +53,6 @@ def changeSpeed():
     currentSpeed = int(random() * maxSpeed)
     print(currentSpeed)
 
-# create the button widget for switching characters
-button = tk.Button(root, text="Next Character", command=switchChar)
-button.pack()
 
 
 #Botão que vai pra fase!!!!
