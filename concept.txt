@@ -1,0 +1,41 @@
+uma classe js que se autoAtualiza a cada x segundos
+class asciCharacter(){
+	constructor(this, arrOfAnimation, hp, atk, name='main', isBot){
+		this.speedTicks = 50
+		this.stepsTicks= 64
+		this.name = name
+		this.hp = hp
+		this.atk = atk
+		this.direction = {x:50%, y:-50%} // eu quero que a direção seja representado por porcentagens divididas, caso ele só queira ir reto em uma direção um precisa estar 100% e outro 0% e ai devera usar como parametro o stepsTicks na direção adequada
+		this.x
+		this.y
+		this.animationArr = arrOfAnimation
+		this.indexAnimation
+		this.indexAnimationLimit = arrOfAnimation.len
+		this.fontSize = 64
+		this.isBot = isBot
+	}
+	renderizeOnScreen(){
+		updateFrameAnimation()		
+	}
+	observerParameter(){
+	checkCordenates()
+	checkDirectionSteps()
+	}
+}
+const arrAsci = ['(>o_o)>', '(>O_o)>', '(>-_-)>']
+class animationsRoading()
+	constructor(loadedMaps){
+		this.mainCharacter = asciCharacter(arrAsci, 15, 3 isBot=false)
+		this.dataBaseEnemies = [
+			{asciArr:['<o>','<o>','<->'], hp:10, atk:2, name:'olhin', isBot=true},...
+]
+		this.enemies = this.generateEnemies(this.dataBaseEnemies)
+		this.dataBaseMaps = loadedMaps
+	}		
+	generateEnemies(enemiesData){
+		enemiesArr = enemiesData.map((enemy)=>{
+			asciCharacter(...enemy)
+		})
+		return enemiesArr
+	}	

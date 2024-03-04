@@ -27,3 +27,15 @@ arrFacesStatic = ['(o_o)', "('_')", "( '-')"]
 
 # aqui ta a animação! cada posição no array é um frame
 karms = ["( '-')", "( '-')", '( "_")', '( -_-)', "( '_')", '( "_")','( "-")','( *_*)', '( *-*)', '( +_+)','( -_-)','#karma','( *_*)',"(*__*)", "(-__-)", '(*_*))', '((*_*)','(*__*)', '(*___*', '*____*', '-____-', '-___-)', '(-__-)', '( -_-)', '( "-")']
+fearArr = ['(> oO<)', '(> oO>)', '(> oO)>', '(> Oo)>', '<( o0<)', '<(oO <)']
+lilFearArr = ['(>oO<)', '(>oO>)', '(>oO)>', '(>Oo)>', '<(o0<)', '<(oO<)']
+
+hatDef = "_/\_"
+
+hatHelmetArr = ['<___>', ' === ', '.___.' ]
+hatHelmetGuide = {
+    'base':hatHelmetArr[0],
+    'content': hatHelmetArr[1],
+    'top':  hatHelmetArr[2],
+    'guide': 'All render in the sames space, multiplying caracter by space - last element, top deve ser renderizado de ponta cabeça'
+}
